@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StylePanel</class>
+ <widget class="QWidget" name="StylePanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>205</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QSpinBox" name="color_back_b">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>115</y>
+     <width>55</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="stepType">
+    <enum>QAbstractSpinBox::DefaultStepType</enum>
+   </property>
+   <property name="value">
+    <number>42</number>
+   </property>
+   <property name="displayIntegerBase">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="color_point_r">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>253</x>
+     <y>115</y>
+     <width>55</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="stepType">
+    <enum>QAbstractSpinBox::DefaultStepType</enum>
+   </property>
+   <property name="value">
+    <number>255</number>
+   </property>
+   <property name="displayIntegerBase">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="color_point_g">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>321</x>
+     <y>115</y>
+     <width>55</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="stepType">
+    <enum>QAbstractSpinBox::DefaultStepType</enum>
+   </property>
+   <property name="value">
+    <number>255</number>
+   </property>
+   <property name="displayIntegerBase">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="color_back_g">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>543</x>
+     <y>115</y>
+     <width>55</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="stepType">
+    <enum>QAbstractSpinBox::DefaultStepType</enum>
+   </property>
+   <property name="value">
+    <number>43</number>
+   </property>
+   <property name="displayIntegerBase">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_9">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>24</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	background:transparent;
+	border: 0px;
+}</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhPreferLatin</set>
+   </property>
+   <property name="text">
+    <string>Метод</string>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="display_method_none">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>20</y>
+     <width>49</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Нет</string>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">PointGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QSpinBox" name="color_line_g">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>93</x>
+     <y>115</y>
+     <width>55</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="stepType">
+    <enum>QAbstractSpinBox::DefaultStepType</enum>
+   </property>
+   <property name="value">
+    <number>255</number>
+   </property>
+   <property name="displayIntegerBase">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="color_line_b">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>115</y>
+     <width>55</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="stepType">
+    <enum>QAbstractSpinBox::DefaultStepType</enum>
+   </property>
+   <property name="value">
+    <number>255</number>
+   </property>
+   <property name="displayIntegerBase">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="projection_f">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>40</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Центральная</string>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">ProjectionGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QSpinBox" name="color_point_b">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>388</x>
+     <y>115</y>
+     <width>55</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="stepType">
+    <enum>QAbstractSpinBox::DefaultStepType</enum>
+   </property>
+   <property name="value">
+    <number>255</number>
+   </property>
+   <property name="displayIntegerBase">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_14">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>39</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	background:transparent;
+	border: 0px;
+}</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhPreferLatin</set>
+   </property>
+   <property name="text">
+    <string>отобржения</string>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="line_type_dotted">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>115</x>
+     <y>40</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Пунктирная</string>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">LineGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_17">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>54</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	background:transparent;
+	border: 0px;
+}</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhPreferLatin</set>
+   </property>
+   <property name="text">
+    <string>вершин</string>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="display_method_square">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>40</y>
+     <width>86</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Квадраты</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">PointGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_16">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>82</x>
+     <y>90</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	background:transparent;
+	border: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Цвет линий</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_18">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>304</x>
+     <y>90</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	background:transparent;
+	border: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Цвет вершин</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_19">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>475</x>
+     <y>39</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	background:transparent;
+	border: 0px;
+}</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhPreferLatin</set>
+   </property>
+   <property name="text">
+    <string>проекции</string>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="line_type_solid">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>115</x>
+     <y>20</y>
+     <width>89</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Сплошная</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">LineGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QSpinBox" name="color_line_r">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>115</y>
+     <width>55</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="stepType">
+    <enum>QAbstractSpinBox::DefaultStepType</enum>
+   </property>
+   <property name="value">
+    <number>255</number>
+   </property>
+   <property name="displayIntegerBase">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="color_back_r">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>475</x>
+     <y>115</y>
+     <width>55</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="stepType">
+    <enum>QAbstractSpinBox::DefaultStepType</enum>
+   </property>
+   <property name="value">
+    <number>42</number>
+   </property>
+   <property name="displayIntegerBase">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_15">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>535</x>
+     <y>90</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	background:transparent;
+	border: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Цвет фона</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_8">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>24</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	background:transparent;
+	border: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Линия</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_13">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>475</x>
+     <y>24</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	background:transparent;
+	border: 0px;
+}</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhPreferLatin</set>
+   </property>
+   <property name="text">
+    <string>Тип</string>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="projection_p">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>20</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Параллельная</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">ProjectionGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QRadioButton" name="display_method_circle">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>60</y>
+     <width>62</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Круги</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">PointGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_11">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>160</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	background:transparent;
+	border: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Толщина линий</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spinBox_point_size">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>516</x>
+     <y>159</y>
+     <width>148</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="minimum">
+    <double>0.050000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>10.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.050000000000000</double>
+   </property>
+   <property name="stepType">
+    <enum>QAbstractSpinBox::AdaptiveDecimalStepType</enum>
+   </property>
+   <property name="value">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spinBox_line_width">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>159</y>
+     <width>148</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="minimum">
+    <double>0.050000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>5.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.100000000000000</double>
+   </property>
+   <property name="stepType">
+    <enum>QAbstractSpinBox::DefaultStepType</enum>
+   </property>
+   <property name="value">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_12">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>375</x>
+     <y>160</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	background:transparent;
+	border: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Размер вершин</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="LineGroup"/>
+  <buttongroup name="ProjectionGroup"/>
+  <buttongroup name="PointGroup"/>
+ </buttongroups>
+</ui>
